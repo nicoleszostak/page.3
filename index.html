@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Berechnung vom Schlüssel K nach Diffie-Hellman</title>
+</head>
+	<script>  
+		function fBerechne() {
+ // Code
+            var vAusgabe="";
+			var vG;
+			var vA;
+			var vgB;
+			var vgA;
+			var vgKa;
+			var vhKb:
+			
+		document.getElementById("idg").value;
+	    document.getElementById("idp").value;
+			
+		document.getElementById("ida").value;
+		document.getElementById("idb").value;
+			
+			
+		
+		
+			vgA = Math.pow(vg, va) % vp;	
+			vgG = Math.pow(vg, vb) % vp;
+			vgKa = Math.pow(vB, va) % vp;
+			vgKb = Math.pow(vA, vb) % vp;
+			
+		 vAusgabe="";
+		vAusgabe = vAusgabe + "Öffentlicher Schlüssel Alice: " + vgA;
+		vAusgabe = vAusgabe + " </br> Öffentlicher Sxhlüssel Alice: " + vgB;
+		vAusgabe = vAusgabe + "</br>-------------------------------</br>" + "generierter Schlüssel K Alice:" vgKa + "</br>Generierter Schlüssel K Bob:" + vgKb;
+			
+			
+			
+	document.getElementById("idAusgabeHTML").innerHTML=vAusgabeHTML;
+
+			
+}
+	
+	
+	
+	
+	
+	
+	
+	</script>
+
+
+
+<body>
+	<br>1. Alice und Bob einigen sich auf:</br>
+	g = <input id="idG" type="text" value="" size="5"><br>
+	<br>p = <input id="idP" type="text" value="" size="5">
+	<br><br>
+	
+	<hr style="border-style:dashed; size: 1px;">
+	2. Alice wählt die Geheime zahl a: <br>
+	a = <input id="idA" type="text" value="" size="5"><br>
+	
+	3. Bb wählt die Geheime Zahl b: 
+	<br>
+	b = <input id="idB" type="text" value="" size="5"><br>
+	<br>
+	<button onClick="fBerechnen();">Berechne Schlüssel K!</button>
+	<div id="Ausgabe"></div>
+</body>
+</html>
